@@ -1,6 +1,6 @@
 {
   "name": "react-three-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript library built on react-three-fiber and drei that provides utilities that simplify 3D development. Designed for developers who prioritize clean, maintainable code.",
   "keywords": [
     "utils",
