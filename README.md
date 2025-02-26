@@ -50,7 +50,7 @@ export default function CosmicCube() {
 
   return (
     <>
-      <StarField movement={{ y: 0.01 }} />
+      <StarField movements={{ y: 0.01 }} />
       <Slide from={[0, 3, 3]} speed={0.3} animateScale>
           <Motion rotation={{ y: 0.01 }}>
               <Throw
