@@ -91,7 +91,7 @@ export default function CosmicCube() {
 
 ## Full API Documentation
 
-Coming soon.
+Visit R3U Documentation [Here](https://r3u.amtcode.com)
 
 ## Contributing
 
