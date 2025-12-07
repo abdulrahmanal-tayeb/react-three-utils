@@ -1,6 +1,6 @@
 {
   "name": "react-three-utils",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "A TypeScript library built on react-three-fiber and drei that provides utilities that simplify 3D development. Designed for developers who prioritize clean, maintainable code.",
   "keywords": [
     "utils",
@@ -24,8 +24,16 @@
   "license": "MIT",
   "author": "AmtCode",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -39,13 +47,18 @@
     "maath": "^0.10.8"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "three": "^0.173.0",
-    "@react-three/fiber": "^8.17.14",
-    "@react-three/drei": "^9.121.5"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "three": ">=0.160.0",
+    "@react-three/fiber": ">=8.0.0",
+    "@react-three/drei": ">=9.0.0"
   },
   "devDependencies": {
     "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.173.0",
+    "@react-three/fiber": "^8.17.14",
+    "@react-three/drei": "^9.121.5",
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
     "eslint": "^9.20.1",
